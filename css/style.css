@@ -898,6 +898,7 @@ body::after {
 }
 .flip__body {
   position: relative;
+  height: 15.625rem;
   -webkit-perspective: 500px;
   perspective: 500px;
   justify-self: center;
@@ -921,10 +922,6 @@ body::after {
   background-color: #3f6a8b
 }
 .flip__front {
-  background-image: url(../img/main.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background-color: #f8f4f4;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
@@ -1342,9 +1339,6 @@ body::after {
   .flip__body {
     width: 21.875rem
   }
-  .flip__body {
-    height: 15.625rem
-  }
   .flip__back-logo {
     margin-bottom: .625rem
   }
@@ -1601,9 +1595,6 @@ body::after {
   }
   .flip__body {
     width: 18.125rem
-  }
-  .flip__body {
-    height: 15.625rem
   }
   .flip__back-logo {
     margin-bottom: .9375rem
@@ -2064,9 +2055,6 @@ body::after {
   }
   .flip__body {
     width: clamp(18.125rem ,17.0340909091rem + 5.4545454545vw ,21.875rem)
-  }
-  .flip__body {
-    height: clamp(15.625rem ,15.625rem + 0 ,15.625rem)
   }
   .flip__back-logo {
     margin-bottom: clamp(.625rem ,1.0284090909rem + -.4545454545vw ,.9375rem)
