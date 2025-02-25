@@ -7,10 +7,10 @@
   font-style: normal
 }
 @font-face {
-  font-family: Academy;
+  font-family: academy;
   font-display: swap;
-  src: url(../fonts/Academy.woff2) format("woff2"),url(../fonts/Academy.woff) format("woff");
-  font-weight: 600;
+  src: url(../fonts/academy.woff2) format("woff2"),url(../fonts/academy.woff) format("woff");
+  font-weight: 400;
   font-style: normal
 }
 @font-face {
@@ -575,7 +575,7 @@ body::after {
   top: 0
 }
 .header {
-  font-family: Academy;
+  font-family: gost-600;
   position: fixed;
   z-index: 150;
   top: 0;
@@ -990,7 +990,7 @@ body::after {
   line-height: 135%;
   text-transform: uppercase;
   color: #fff;
-  font-family: Academy
+  font-family: gost-600
 }
 .flip__body:hover .flip__back {
   -webkit-transform: rotateY(0);
@@ -1040,102 +1040,6 @@ body::after {
   opacity: 1;
   -webkit-transform: translate(0,0);
   transform: translate(0,0)
-}
-.park {
-  position: relative
-}
-.park__block {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 56.25rem;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #04330c
-}
-.park__back {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-.park__back img {
-  border-radius: 50%;
-  opacity: .5;
-  aspect-ratio: 450/450;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: 1;
-  -webkit-animation: 10s pusi infinite linear;
-  animation: 10s pusi infinite linear
-}
-@keyframes pusi {
-  0% {
-    rotate: 0deg
-  }
-  100% {
-    rotate: 360deg
-  }
-}
-.park__left {
-  z-index: 2
-}
-.park__foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .5s
-}
-.park__foto img {
-  aspect-ratio: 100/350;
-  -o-object-fit: contain;
-  object-fit: contain
-}
-.park__foto--1:hover {
-  scale: 1.5
-}
-.park__foto--2:hover {
-  scale: 1.5
-}
-.park__foto--3:hover {
-  scale: 1.5
-}
-.park__right {
-  z-index: 2;
-  -webkit-transform: scale(-1,1);
-  transform: scale(-1,1)
-}
-.park__foto--4:hover {
-  scale: 1.5
-}
-.park__foto--5:hover {
-  scale: 1.5
-}
-.park__foto--6:hover {
-  scale: 1.5
-}
-.park__block:hover .park__foto--1 {
-  rotate: 45deg
-}
-.park__block:hover .park__foto--2 {
-  rotate: 50deg
-}
-.park__block:hover .park__foto--3 {
-  rotate: 50deg
-}
-.park__block:hover .park__foto--4 {
-  rotate: 45deg
-}
-.park__block:hover .park__foto--5 {
-  rotate: 50deg
-}
-.park__block:hover .park__foto--6 {
-  rotate: 50deg
 }
 .galery {
   position: relative;
@@ -1480,24 +1384,6 @@ body::after {
   .flip__front-title {
     margin-bottom: 1.25rem
   }
-  .park {
-    padding-top: 5rem
-  }
-  .park {
-    padding-bottom: 5rem
-  }
-  .park__back img {
-    width: 40.625rem
-  }
-  .park__back img {
-    height: 40.625rem
-  }
-  .park__foto img {
-    width: 18.75rem
-  }
-  .park__foto img {
-    height: 18.75rem
-  }
   .galery {
     padding-top: 5rem
   }
@@ -1757,24 +1643,6 @@ body::after {
   }
   .flip__front-title {
     margin-bottom: .9375rem
-  }
-  .park {
-    padding-top: 2.5rem
-  }
-  .park {
-    padding-bottom: 2.5rem
-  }
-  .park__back img {
-    width: 12.5rem
-  }
-  .park__back img {
-    height: 12.5rem
-  }
-  .park__foto img {
-    width: 6.25rem
-  }
-  .park__foto img {
-    height: 6.25rem
   }
   .galery {
     padding-top: .625rem
@@ -2238,24 +2106,6 @@ body::after {
   }
   .flip__front-title {
     margin-bottom: clamp(.9375rem ,.8465909091rem + .4545454545vw ,1.25rem)
-  }
-  .park {
-    padding-top: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
-  }
-  .park {
-    padding-bottom: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
-  }
-  .park__back img {
-    width: clamp(12.5rem ,4.3181818182rem + 40.9090909091vw ,40.625rem)
-  }
-  .park__back img {
-    height: clamp(12.5rem ,4.3181818182rem + 40.9090909091vw ,40.625rem)
-  }
-  .park__foto img {
-    width: clamp(6.25rem ,2.6136363636rem + 18.1818181818vw ,18.75rem)
-  }
-  .park__foto img {
-    height: clamp(6.25rem ,2.6136363636rem + 18.1818181818vw ,18.75rem)
   }
   .galery {
     padding-top: clamp(.625rem ,-.6477272727rem + 6.3636363636vw ,5rem)
