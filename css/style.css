@@ -7,13 +7,6 @@
   font-style: normal
 }
 @font-face {
-  font-family: academy;
-  font-display: swap;
-  src: url(../fonts/academy.woff2) format("woff2"),url(../fonts/academy.woff) format("woff");
-  font-weight: 400;
-  font-style: normal
-}
-@font-face {
   font-family: cinzel_regular;
   font-display: swap;
   src: url(../fonts/cinzel_regular.woff2) format("woff2"),url(../fonts/cinzel_regular.woff) format("woff");
@@ -334,7 +327,7 @@ body::after {
   display: grid;
   align-self: center;
   line-height: 130%;
-  font-family: Academy;
+  font-family: gost-600;
   text-transform: uppercase;
   background-color: rgba(0,0,0,0);
   transition: .5s;
@@ -506,7 +499,7 @@ body::after {
 [class*=__button] {
   position: relative;
   z-index: 3;
-  font-family: Academy;
+  font-family: gost-600;
   border-color: transparent;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -983,7 +976,8 @@ body::after {
   line-height: 135%;
   text-align: center;
   text-shadow: 0 0 0 #000;
-  color: #fcf3f3
+  color: #fcf3f3;
+  font-family: gost-600
 }
 .flip__front-title {
   text-align: center;
