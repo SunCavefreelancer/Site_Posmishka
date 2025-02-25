@@ -1541,7 +1541,7 @@ body::after {
     margin-right: 1.875rem
   }
   .header .menu__link {
-    font-size: 1.25rem
+    font-size: 2rem
   }
   .hero {
     padding-top: 5rem
@@ -1681,7 +1681,7 @@ body::after {
     margin-right: 0
   }
   .header .menu__link {
-    font-size: 1.25rem
+    font-size: 1.375rem
   }
   .galery__item {
     width: 31.25rem;
@@ -1835,7 +1835,7 @@ body::after {
   .header .menu .sub-menu .sub-menu__link {
     font-size: 1.5rem;
     color: #e4e3e3;
-    font-family: Univers;
+    font-family: gost-600;
     letter-spacing: .09375rem
   }
 }
@@ -2004,7 +2004,7 @@ body::after {
     margin-right: clamp(1.875rem ,1.5113636364rem + 1.8181818182vw ,3.125rem)
   }
   .header .menu__link {
-    font-size: clamp(1.25rem ,1.2136363636rem + .1818181818vw ,1.375rem)
+    font-size: clamp(1.375rem ,2.1818181818rem + -.9090909091vw ,2rem)
   }
   .hero {
     padding-top: clamp(5rem ,3.5454545455rem + 7.2727272727vw ,10rem)
