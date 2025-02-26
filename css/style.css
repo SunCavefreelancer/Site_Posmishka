@@ -747,7 +747,7 @@ body::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  gap: .3125rem;
   position: relative;
   z-index: 5
 }
@@ -846,7 +846,7 @@ body::after {
   object-fit: cover
 }
 .fplipbox {
-  background: url(../img/tkani-poshiv.webp);
+  background: url(../img/tkani-poshiv02.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0
@@ -971,6 +971,7 @@ body::after {
   opacity: .5;
   padding: .3125rem
 }
+.flip__back-subtitle,
 .flip__front-subtitle {
   line-height: 135%;
   text-align: center;
@@ -1153,6 +1154,58 @@ body::after {
   opacity: 1;
   -webkit-transform: translate(0,0);
   transform: translate(0,0)
+}
+.tkani {
+  font-family: gost-600
+}
+.tkani__text {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem
+}
+.tkani__title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 135%;
+  position: relative;
+  z-index: 3
+}
+.tkani .tkani__description,
+.tkani__subtitle {
+  text-align: center;
+  line-height: 135%
+}
+.tkani__cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .9375rem
+}
+.tkani__card {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .3125rem;
+  position: relative
+}
+.tkani__foto {
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem
+}
+.tkani__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 320/180;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .9375rem
+}
+.tkani__img-big img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 320/180;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .9375rem
 }
 @media (min-width:88.75em) {
   .popup__description h2 {
@@ -1365,6 +1418,7 @@ body::after {
   .flip__front-icon img {
     height: 3.75rem
   }
+  .flip__back-subtitle,
   .flip__front-subtitle {
     font-size: 1.3125rem
   }
@@ -1409,6 +1463,22 @@ body::after {
   }
   .galery__sib-title {
     margin-bottom: 2.1875rem
+  }
+  .tkani {
+    padding-top: 5rem
+  }
+  .tkani {
+    padding-bottom: 5rem
+  }
+  .tkani__text {
+    margin-bottom: 3.125rem
+  }
+  .tkani__title {
+    font-size: 1.875rem
+  }
+  .tkani .tkani__description,
+  .tkani__subtitle {
+    font-size: 1.5625rem
   }
 }
 @media (max-width:20em) {
@@ -1622,6 +1692,7 @@ body::after {
   .flip__front-icon img {
     height: 4.375rem
   }
+  .flip__back-subtitle,
   .flip__front-subtitle {
     font-size: 1.125rem
   }
@@ -1667,6 +1738,22 @@ body::after {
   .galery__sib-title {
     margin-bottom: .9375rem
   }
+  .tkani {
+    padding-top: 2.5rem
+  }
+  .tkani {
+    padding-bottom: 2.5rem
+  }
+  .tkani__text {
+    margin-bottom: 1.875rem
+  }
+  .tkani__title {
+    font-size: 1.5625rem
+  }
+  .tkani .tkani__description,
+  .tkani__subtitle {
+    font-size: 1.375rem
+  }
 }
 @media (max-width:73.125em) {
   .flip__cards {
@@ -1693,6 +1780,9 @@ body::after {
   .galery__box-down {
     top: -1.25rem;
     right: -1.25rem
+  }
+  .tkani__cards {
+    grid-template-columns: repeat(1,1fr)
   }
 }
 @media (max-width:53.74875em) {
@@ -2085,6 +2175,7 @@ body::after {
   .flip__front-icon img {
     height: clamp(3.75rem ,4.5568181818rem + -.9090909091vw ,4.375rem)
   }
+  .flip__back-subtitle,
   .flip__front-subtitle {
     font-size: clamp(1.125rem ,1.0704545455rem + .2727272727vw ,1.3125rem)
   }
@@ -2129,6 +2220,22 @@ body::after {
   }
   .galery__sib-title {
     margin-bottom: clamp(.9375rem ,.5738636364rem + 1.8181818182vw ,2.1875rem)
+  }
+  .tkani {
+    padding-top: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
+  }
+  .tkani {
+    padding-bottom: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
+  }
+  .tkani__text {
+    margin-bottom: clamp(1.875rem ,1.5113636364rem + 1.8181818182vw ,3.125rem)
+  }
+  .tkani__title {
+    font-size: clamp(1.5625rem ,1.4715909091rem + .4545454545vw ,1.875rem)
+  }
+  .tkani .tkani__description,
+  .tkani__subtitle {
+    font-size: clamp(1.375rem ,1.3204545455rem + .2727272727vw ,1.5625rem)
   }
 }
 @media (any-hover:hover) {
