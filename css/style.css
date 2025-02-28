@@ -1207,6 +1207,100 @@ body::after {
   object-fit: cover;
   border-radius: .9375rem
 }
+.zamiry {
+  font-family: gost-600;
+  color: var(--bg-primary);
+  background-color: #000;
+  position: relative
+}
+.zamiry__up {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  gap: .3125rem;
+  max-width: 46.875rem;
+  text-align: center
+}
+.zamiry__title {
+  line-height: 135%
+}
+.zamiry__subtitle {
+  line-height: 145%
+}
+.zamiry__subtitle span {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2
+}
+.zamiry span::before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: -3%;
+  border: .1875rem solid #00bfff;
+  border-radius: .3125rem;
+  line-height: 145%
+}
+.zamiry__img-right {
+  position: relative
+}
+.zamiry__img-right img {
+  width: 12.5rem;
+  height: 3.125rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  aspect-ratio: 650/50;
+  position: absolute;
+  top: -2.8125rem;
+  right: 0
+}
+.zamiry__text {
+  background-color: rgba(0,0,0,.4980392157);
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-self: flex-end;
+  align-self: center
+}
+.zamiry__item {
+  line-height: 130%;
+  padding: .9375rem
+}
+.zamiry__item span {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2
+}
+.zamiry span::before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: -3%;
+  border: .1875rem solid #00bfff;
+  border-radius: .3125rem;
+  line-height: 145%
+}
+.zamiry__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 650/35;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.zamiry__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  aspect-ratio: 450/300;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-16.25rem);
+  transform: translateY(-16.25rem)
+}
 @media (min-width:88.75em) {
   .popup__description h2 {
     font-size: 2.1875rem
@@ -1479,6 +1573,39 @@ body::after {
   .tkani .tkani__description,
   .tkani__subtitle {
     font-size: 1.5625rem
+  }
+  .zamiry {
+    padding-top: 5rem
+  }
+  .zamiry {
+    padding-bottom: 5rem
+  }
+  .zamiry__up {
+    margin-bottom: 4.0625rem
+  }
+  .zamiry__title {
+    font-size: 2.1875rem
+  }
+  .zamiry__subtitle {
+    font-size: 1.5625rem
+  }
+  .zamiry__text {
+    width: 40.625rem
+  }
+  .zamiry__text {
+    gap: 4.0625rem
+  }
+  .zamiry__item {
+    font-size: 1.5625rem
+  }
+  .zamiry__img img {
+    width: 60rem
+  }
+  .zamiry__img img {
+    height: 43.75rem
+  }
+  .zamiry__img img {
+    right: .0000000625rem
   }
 }
 @media (max-width:20em) {
@@ -1754,6 +1881,39 @@ body::after {
   .tkani__subtitle {
     font-size: 1.375rem
   }
+  .zamiry {
+    padding-top: 2.5rem
+  }
+  .zamiry {
+    padding-bottom: 2.5rem
+  }
+  .zamiry__up {
+    margin-bottom: 2.8125rem
+  }
+  .zamiry__title {
+    font-size: 1.5625rem
+  }
+  .zamiry__subtitle {
+    font-size: 1.375rem
+  }
+  .zamiry__text {
+    width: 18.125rem
+  }
+  .zamiry__text {
+    gap: 1.5625rem
+  }
+  .zamiry__item {
+    font-size: 1.25rem
+  }
+  .zamiry__img img {
+    width: 20rem
+  }
+  .zamiry__img img {
+    height: 41.875rem
+  }
+  .zamiry__img img {
+    right: -20rem
+  }
 }
 @media (max-width:73.125em) {
   .flip__cards {
@@ -1945,6 +2105,12 @@ body::after {
     display: none
   }
 }
+@media (max-width:30.06125em) {
+  .zamiry__text {
+    text-align: right;
+    background-color: rgba(0,0,0,.4980392157)
+  }
+}
 @media (max-width:29.99875em) {
   .popup__maneken {
     opacity: .5
@@ -1957,6 +2123,25 @@ body::after {
   }
   .galery__cards {
     grid-template-columns: repeat(1,1fr)
+  }
+}
+@media (max-width:26.62375em) {
+  .zamiry__img-right img {
+    left: 15%;
+    top: -1.25rem;
+    padding-bottom: 1.25rem
+  }
+  .zamiry__text {
+    text-align: right;
+    background-color: rgba(0,0,0,0)
+  }
+  .zamiry__img img {
+    opacity: .3
+  }
+}
+@media (max-width:23.81125em) {
+  .zamiry__text {
+    text-align: center
   }
 }
 @media (max-width:21.93625em) {
@@ -2236,6 +2421,39 @@ body::after {
   .tkani .tkani__description,
   .tkani__subtitle {
     font-size: clamp(1.375rem ,1.3204545455rem + .2727272727vw ,1.5625rem)
+  }
+  .zamiry {
+    padding-top: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
+  }
+  .zamiry {
+    padding-bottom: clamp(2.5rem ,1.7727272727rem + 3.6363636364vw ,5rem)
+  }
+  .zamiry__up {
+    margin-bottom: clamp(2.8125rem ,2.4488636364rem + 1.8181818182vw ,4.0625rem)
+  }
+  .zamiry__title {
+    font-size: clamp(1.5625rem ,1.3806818182rem + .9090909091vw ,2.1875rem)
+  }
+  .zamiry__subtitle {
+    font-size: clamp(1.375rem ,1.3204545455rem + .2727272727vw ,1.5625rem)
+  }
+  .zamiry__text {
+    width: clamp(18.125rem ,11.5795454545rem + 32.7272727273vw ,40.625rem)
+  }
+  .zamiry__text {
+    gap: clamp(1.5625rem ,.8352272727rem + 3.6363636364vw ,4.0625rem)
+  }
+  .zamiry__item {
+    font-size: clamp(1.25rem ,1.1590909091rem + .4545454545vw ,1.5625rem)
+  }
+  .zamiry__img img {
+    width: clamp(20rem ,8.3636363636rem + 58.1818181818vw ,60rem)
+  }
+  .zamiry__img img {
+    height: clamp(41.875rem ,41.3295454545rem + 2.7272727273vw ,43.75rem)
+  }
+  .zamiry__img img {
+    right: clamp(-20rem ,-25.8181818364rem + 29.0909091818vw ,.0000000625rem)
   }
 }
 @media (any-hover:hover) {
