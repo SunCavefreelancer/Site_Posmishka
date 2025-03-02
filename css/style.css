@@ -2511,7 +2511,7 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     overflow: auto;
     transition: right .3s ease 0s;
     background-color: #000
