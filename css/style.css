@@ -608,7 +608,7 @@ body::after {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  gap: .9375rem
+  padding: .5rem
 }
 .header .menu .menu__item--parent {
   position: relative;
@@ -1836,9 +1836,6 @@ body::after {
   .header__logo img {
     height: 6.25rem
   }
-  .header .menu__list:not(:last-child) {
-    margin-right: 1.875rem
-  }
   .header .menu__link {
     font-size: 1.375rem
   }
@@ -2205,9 +2202,6 @@ body::after {
   }
   .header__logo img {
     height: 3.75rem
-  }
-  .header .menu__list:not(:last-child) {
-    margin-right: .0000000625rem
   }
   .header .menu__link {
     font-size: 1.5rem
@@ -2836,9 +2830,6 @@ body::after {
   }
   .header__logo img {
     height: clamp(3.75rem ,3.0227272727rem + 3.6363636364vw ,6.25rem)
-  }
-  .header .menu__list:not(:last-child) {
-    margin-right: clamp(.0000000625rem ,-.5454544648rem + 2.7272726364vw ,1.875rem)
   }
   .header .menu__link {
     font-size: clamp(1.375rem ,1.5363636364rem + -.1818181818vw ,1.5rem)
