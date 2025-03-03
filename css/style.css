@@ -1837,7 +1837,7 @@ body::after {
     height: 6.25rem
   }
   .header .menu__list:not(:last-child) {
-    margin-right: 3.125rem
+    margin-right: 1.875rem
   }
   .header .menu__link {
     font-size: 1.375rem
@@ -2457,9 +2457,7 @@ body::after {
 @media (max-width:61.99875em) {
   .header .menu__list {
     flex-direction: column;
-    padding: .5rem
-  }
-  .header .menu__list:not(:last-child) {
+    padding: .5rem;
     margin-right: 0
   }
   .header .menu__link {
@@ -2840,7 +2838,7 @@ body::after {
     height: clamp(3.75rem ,3.0227272727rem + 3.6363636364vw ,6.25rem)
   }
   .header .menu__list:not(:last-child) {
-    margin-right: clamp(.0000000625rem ,-.9090908284rem + 4.5454544545vw ,3.125rem)
+    margin-right: clamp(.0000000625rem ,-.5454544648rem + 2.7272726364vw ,1.875rem)
   }
   .header .menu__link {
     font-size: clamp(1.375rem ,1.5363636364rem + -.1818181818vw ,1.5rem)
