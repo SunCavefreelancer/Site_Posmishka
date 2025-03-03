@@ -721,14 +721,14 @@ body::after {
   transform: scale(0)
 }
 .menu-open .icon-menu::before {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
   top: 50%;
   margin-top: -.0625rem
 }
 .menu-open .icon-menu::after {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
   bottom: 50%;
   margin-bottom: -.0625rem
 }
