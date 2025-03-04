@@ -919,7 +919,12 @@ body::after {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: .9375rem;
-  border: .125rem dashed #fff
+  border: .125rem dashed #fff;
+  transition: .5s
+}
+.cleaning__img img:hover {
+  -webkit-transform: translateY(-.9375rem);
+  transform: translateY(-.9375rem)
 }
 .cleaning__text {
   display: flex;
@@ -1582,7 +1587,7 @@ body::after {
   border-radius: 0 100% 100% 0/0 100% 0 100%
 }
 .tkani {
-  background: url(../img/tkani-poshiv02.webp);
+  background: url(../img/background-tkani.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -2841,8 +2846,8 @@ body::after {
   }
   .footer__descriotin {
     text-align: center;
-    background-color: var(--inverse);
-    border-radius: .9375rem
+    border-radius: .9375rem;
+    text-shadow: .0625rem .0625rem .3125rem #e3cbbe
   }
 }
 @media (max-width:30.06125em) {
