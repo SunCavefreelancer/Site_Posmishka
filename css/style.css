@@ -979,7 +979,10 @@ body::after {
 .do-it {
   font-family: gost-600;
   color: #000;
-  background-color: #f5f3ee
+  background: url(../img/background-footer.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover
 }
 .do-it__up {
   display: flex;
@@ -1000,7 +1003,7 @@ body::after {
 .do-it__cards {
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  gap: .3125rem
+  gap: .625rem
 }
 .do-it__card {
   position: relative
@@ -1022,10 +1025,10 @@ body::after {
   bottom: 30%;
   right: 0;
   padding: .625rem;
-  background-color: rgba(255,208,0,.7647058824);
+  background-color: rgba(27,189,243,.7647058824);
   border-top-right-radius: .9375rem;
   border-bottom-right-radius: .9375rem;
-  color: #1a1a1a;
+  color: #fff;
   visibility: hidden;
   transition: .5s;
   -webkit-transform: translateX(-30%);
@@ -1063,7 +1066,59 @@ body::after {
   width: 100%;
   height: 100%;
   padding: .625rem;
-  text-transform: uppercase
+  text-transform: uppercase;
+  text-decoration: underline
+}
+.do-it__arrow {
+  position: absolute;
+  top: 8%;
+  left: 1%;
+  padding: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffde25;
+  border-radius: 50%;
+  -webkit-animation: arrow 2s linear infinite backwards;
+  animation: arrow 2s linear infinite backwards
+}
+.do-it__arrow img {
+  width: 1.875rem;
+  height: 1.25rem;
+  aspect-ratio: 30/20;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
 }
 .do-it__number {
   line-height: 130%;
@@ -1075,7 +1130,24 @@ body::after {
   height: 100%;
   padding: .625rem;
   text-transform: uppercase;
-  color: #f50101
+  color: rgba(0,178,238,.7647058824)
+}
+.do-it__number3 {
+  padding: .625rem;
+  border: .125rem dashed #000;
+  background-color: #ffde25;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  opacity: 1;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  right: 0
 }
 .do-it__name {
   line-height: 130%;
@@ -1086,7 +1158,7 @@ body::after {
   width: 100%;
   height: 100%;
   text-transform: uppercase;
-  color: rgba(221,224,243,.4156862745);
+  color: rgba(172,170,161,.6235294118);
   transition: .7s;
   opacity: 1;
   visibility: visible
@@ -1100,7 +1172,7 @@ body::after {
   width: 100%;
   height: 100%;
   text-transform: uppercase;
-  color: rgba(221,224,243,.4156862745);
+  color: rgba(172,170,161,.6235294118);
   transition: .5s;
   opacity: 1;
   visibility: visible
@@ -1112,6 +1184,13 @@ body::after {
   opacity: 0;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%)
+}
+.do-it .do-it__card:hover .do-it__number3 {
+  background-color: rgba(27,189,243,.7647058824);
+  color: #fff;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1
 }
 .hero {
   height: 100vh;
@@ -2190,6 +2269,9 @@ body::after {
   .do-it__number {
     font-size: 1.5625rem
   }
+  .do-it__number3 {
+    font-size: 1.5625rem
+  }
   .do-it__name {
     font-size: 1.5625rem
   }
@@ -2591,7 +2673,7 @@ body::after {
     padding-top: 7.5rem
   }
   .do-it {
-    padding-bottom: 3.75rem
+    padding-bottom: 1.25rem
   }
   .do-it__up {
     margin-bottom: 1.25rem
@@ -2616,6 +2698,9 @@ body::after {
     font-size: 1.25rem
   }
   .do-it__number {
+    font-size: 1.25rem
+  }
+  .do-it__number3 {
     font-size: 1.25rem
   }
   .do-it__name {
@@ -3326,7 +3411,7 @@ body::after {
     padding-top: clamp(7.5rem ,6.7727272727rem + 3.6363636364vw ,10rem)
   }
   .do-it {
-    padding-bottom: clamp(3.75rem ,3.2045454545rem + 2.7272727273vw ,5.625rem)
+    padding-bottom: clamp(1.25rem ,-.0227272727rem + 6.3636363636vw ,5.625rem)
   }
   .do-it__up {
     margin-bottom: clamp(1.25rem ,.8863636364rem + 1.8181818182vw ,2.5rem)
@@ -3351,6 +3436,9 @@ body::after {
     font-size: clamp(1.25rem ,1.2136363636rem + .1818181818vw ,1.375rem)
   }
   .do-it__number {
+    font-size: clamp(1.25rem ,1.1590909091rem + .4545454545vw ,1.5625rem)
+  }
+  .do-it__number3 {
     font-size: clamp(1.25rem ,1.1590909091rem + .4545454545vw ,1.5625rem)
   }
   .do-it__name {
