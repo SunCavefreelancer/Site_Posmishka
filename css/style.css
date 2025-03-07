@@ -794,8 +794,7 @@ body::after {
 }
 .footer a:hover {
   -webkit-transform: translateY(-1.25rem);
-  transform: translateY(-1.25rem);
-  opacity: .8
+  transform: translateY(-1.25rem)
 }
 .footer__question {
   max-width: 25rem;
@@ -810,7 +809,6 @@ body::after {
 .footer__subtitle:hover {
   -webkit-transform: translateY(-1.25rem);
   transform: translateY(-1.25rem);
-  opacity: none;
   color: #000
 }
 .footer .footer__centr {
