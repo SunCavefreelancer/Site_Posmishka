@@ -1105,6 +1105,12 @@
             }));
         }
     }), 0);
+    document.ondragstart = noselect;
+    document.onselectstart = noselect;
+    document.oncontextmenu = noselect;
+    function noselect() {
+        return false;
+    }
     window["FLS"] = true;
     menuInit();
     showMore();
