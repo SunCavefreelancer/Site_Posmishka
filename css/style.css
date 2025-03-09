@@ -1200,6 +1200,61 @@ body::after {
   transform: translateX(0);
   opacity: 1
 }
+.do-it .do-it__card {
+  opacity: 0;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0,50%);
+  transform: translate(0,50%)
+}
+.do-it ._watcher-view.do-it__card {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.do-it .do-it__title {
+  opacity: 0;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0,50%);
+  transform: translate(0,50%)
+}
+.do-it ._watcher-view.do-it__title {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.do-it .do-it__subtitle {
+  opacity: 0;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0,50%);
+  transform: translate(0,50%)
+}
+.do-it ._watcher-view.do-it__subtitle {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.do-it .do-it__additional {
+  opacity: 0;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0,50%);
+  transform: translate(0,50%)
+}
+.do-it ._watcher-view.do-it__additional {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.do-it .do-it__final {
+  opacity: 0;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0,50%);
+  transform: translate(0,50%)
+}
+.do-it ._watcher-view.do-it__final {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
 .hero {
   height: 100vh;
   width: 100%;
